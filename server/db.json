@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 14 Pro Max",
+      "description": "256 GB, I bought it in the US and never used it, the iPhone is new in the box! Free SIM",
+      "image": "https://fdn.gsmarena.com/imgroot/news/22/09/apple-iphone-14-pro-max-ifr/-1200w5/gsmarena_001.jpg",
+      "price": 800,
+      "city": "Haifa",
+      "phoneNumber": "050-123-4567",
+      "datePublished": "2024-01-11T17:07:38.795Z"
+    },
+    {
+      "id": 2,
+      "name": "Bicycle",
+      "description": "Brand: Orba Model: OCCAM TR M10 Size: Large Year 2018 Frame Material: Carbon Fiber Rear Triangle Material: Carbon Fiber Fork: Fox 34 Factory Float Fork: 130mm Rear Shock: Fox DPX Factory Rear Suspension Travel: 120mm Weight: 28 £0 oz",
+      "image": "https://uploads.homeless.co.il/yad2/201812/nvFile3611265.jpg",
+      "price": 450,
+      "city": "Netanya",
+      "phoneNumber": "050-964-2315",
+      "datePublished": "2024-02-21T20:45:26.476Z"
+    },
+    {
+      "id": 3,
+      "name": "HyperJuice 140W PD USB C",
+      "description": "Type C charger for laptop and MacBook - compact for travel For fast charging of up to 3 devices at the same time:PC or Macbook, iPad/tablet and phone at the same time.Charging all MacBook models with a maximum power of up to 140W",
+      "image": "https://eadn-wc05-4165754.nxedge.io/cdn/pub/media/catalog/product/cache/0d7e15299f2e9c150ef66e46509ba14b/c/m/cmp00242_270720221350461.jpeg.webp",
+      "price": 49.9,
+      "city": "Haifa",
+      "phoneNumber": "050-277-1517",
+      "datePublished": "2024-01-03T13:40:22.436Z"
+    },
+    {
+      "id": 4,
+      "name": "Wireless speakers with subwoofer for PC",
+      "description": "A subwoofer that improves your audio with fascinating bass responses. Bluetooth 5.0 technology for high quality audio wirelessly, Amazing and powerful audio performance with 60W RMS and 120W peak power Beautiful LED backlight that includes spectacular shades of purple, red and blue",
+      "image": "https://cdn.istores.co.il/image/upload/if_ar_gt_2:1/c_mpad,h_662,w_555/c_fill,h_662,w_555/if_else/c_fill,q_100,w_555/if_end/dpr_2/v1649758462/clients/100771/74831371bdc5c405749f634631469dba8ee197aa.jpg",
+      "price": 123,
+      "city": "Jerusalem",
+      "phoneNumber": "052-362-6666",
+      "datePublished": "2024-02-15T20:54:39.432Z"
+    },
+    {
+      "id": 5,
+      "name": "Laptop HP 15",
+      "description": "Operating system: Windows 11 Home Processor brand: Intel® Core™ i7 1335U generation 13 1 Memory size: 16 GB DDR4Battery life: up to 7 hours and 45 minutes 3",
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08651473.png",
+      "price": 2300,
+      "city": "Jaffa",
+      "phoneNumber": "052-162-6764",
+      "datePublished": "2024-02-21T20:42:06.217Z"
+    },
+    {
+      "id": 6,
+      "name": "iPhone 11 Pro",
+      "description": "The screen is broken because, apart from that, the iPhone has been in excellent condition with me for 4 years with 128GB.",
+      "image": "https://www.digitaltrends.com/wp-content/uploads/2019/09/iphone-11-pro-review-1.jpg?resize=625%2C417&p=1",
+      "price": 200,
+      "city": "Tel Aviv",
+      "phoneNumber": "050-111-1117",
+      "datePublished": "2023-02-12T19:17:08.218Z"
+    },
+    {
+      "id": 7,
+      "name": "Travelling bag",
+      "description": "Original Louis Vuitton travel bag, I bought it for $1000",
+      "image": "https://www.dianazohar.com/wp-content/uploads/2021/04/b8370dbd.jpg",
+      "price": 220,
+      "city": "Tel Aviv",
+      "phoneNumber": "053-569-5894",
+      "datePublished": "2024-02-22T14:00:03.728Z"
+    },
+    {
+      "id": 8,
+      "name": "Echo Guitar",
+      "description": "Make a statement with Echo, our classic dreadnought guitar with a modern edge. Crafted with a solid Sitka spruce top in a natural gloss finish and adorned with gold hardware, this guitar truly shines. Echo's rich and resonant tones are bold, making it the perfect tool for self-expression.",
+      "image": "https://orangewoodguitars.com/cdn/shop/products/ECHO-FRONT-FULL_2048x.jpg?v=1645732704",
+      "price": 170,
+      "city": "Rishon Lezion",
+      "phoneNumber": "054-369-8856",
+      "datePublished": "2024-02-22T14:05:28.795Z"
+    },
+    {
+      "id": 9,
+      "name": "Snorkel Plus Fins",
+      "description": "Comfortable strap fins that can be locked with booties. At the same time, the leg pockets are so soft, they are easy to put on and take off and are suitable for prolonged use comfortably.",
+      "image": "https://i0.wp.com/www.snapir.com/wp-content/uploads/2017/01/Snorkel-Plus-Fins-Kids-blue.jpg?fit=450%2C450&ssl=1",
+      "price": 100,
+      "city": "Jerusalem",
+      "phoneNumber": "050-003-0223",
+      "datePublished": "2024-02-21T20:50:34.058Z"
+    }
+  ]
+}

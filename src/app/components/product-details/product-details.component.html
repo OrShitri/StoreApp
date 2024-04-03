@@ -1,0 +1,50 @@
+<div *ngIf="product.id != 0">
+    <fieldset>
+        <legend>Product Details</legend>
+        <h1>{{product.name}}</h1>
+
+        <figure>
+            <img [src]="product.image" width="700" [alt]="product.name" />
+
+            <figcaption>
+                <strong>Description:</strong><em>{{product.description}}</em>
+            </figcaption>
+        </figure>
+
+        <div class="div-flex-sell">
+            <div>
+                <fieldset>
+                    <legend>Seller Details</legend>
+                    <p class="p-flex-details">
+                        <span class="span-brown"><strong><u>City: </u></strong></span>
+                        <span><strong>{{product.city}}</strong></span>
+                    </p>
+
+                    <p class="p-flex-details">
+                        <span class="span-brown"><strong><u>Phone Number: </u></strong></span>
+                        <span><strong>{{product.phoneNumber}}</strong></span>
+                    </p>
+                </fieldset>
+            </div>
+
+            <div>
+                <button (click)="deleteHandler(product.id)">Purchase</button>
+            </div>
+
+            <div>
+                <div class="div-flex-price">
+                    <span><em>{{product.price | currency:'USD'}}</em></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-date">
+            <strong>{{product.datePublished | date:'dd/MM/yyyy
+                - HH:mm'}}</strong>
+        </div>
+    </fieldset>
+</div>
+
+<div *ngIf="product.id == 0">
+    <page-not-found></page-not-found>
+</div>

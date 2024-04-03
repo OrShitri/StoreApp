@@ -1,0 +1,121 @@
+<form #newForm="ngForm">
+    <fieldset>
+        <legend>Add a New Product</legend>
+
+        <div class="div-input-bottom">
+            <div class="div-flex">
+                <label for="name"><strong>Name:</strong></label>
+
+                <input id="name" type="text" [(ngModel)]="newProduct.name" name="name"
+                    #name="ngModel" required minlength="2" maxlength="25"
+                    pattern="[a-zA-Z][a-zA-Z][a-zA-Z1-9 ]*" placeholder="Enter your product name" />
+
+                <span class="approved-v-green" *ngIf="name.valid">
+                    <img src="https://www.dr-eliyahudaniel.co.il/wp-content/uploads/2011/10/check-mark.png"
+                        alt="Approved" width="25" />
+                </span>
+            </div>
+
+            <div class="error" *ngIf="name.invalid && (name.dirty || name.touched)">
+                Name must start with at least 2 letters and contain only letters and numbers
+            </div>
+        </div>
+
+        <div class="div-input-bottom">
+            <div class="div-flex">
+                <label for="description"><strong>Description:</strong></label>
+
+                <input id="description" type="text" [(ngModel)]="newProduct.description"
+                    name="description" #description="ngModel" required minlength="5"
+                    placeholder="Enter a description of your product" />
+
+                <span class="approved-v-green" *ngIf="description.valid">
+                    <img src="https://www.dr-eliyahudaniel.co.il/wp-content/uploads/2011/10/check-mark.png"
+                        alt="Approved" width="25" />
+                </span>
+            </div>
+
+            <div class="error"
+                *ngIf="description.invalid && (description.dirty || description.touched)">
+                Min length is 5 chars
+            </div>
+        </div>
+
+        <div class="div-input-bottom">
+            <div class="div-flex">
+                <label for="price"><strong>Price:</strong></label>
+
+                <input id="price" type="number" [(ngModel)]="newProduct.price" #price="ngModel"
+                    required name="price" min="1" max="10000"
+                    placeholder="Enter the product price in dollars [$]" />
+
+                <span class="approved-v-green" *ngIf="price.valid">
+                    <img src="https://www.dr-eliyahudaniel.co.il/wp-content/uploads/2011/10/check-mark.png"
+                        alt="Approved" width="25" />
+                </span>
+            </div>
+
+            <div class="error" *ngIf="price.invalid && (price.dirty || price.touched)">
+                Minimum price of - $1 , Maximum price of - $10K
+            </div>
+        </div>
+
+        <div class="div-input-bottom">
+            <div class="div-flex">
+                <label for="image"><strong>Image:</strong></label>
+
+                <input id="image" type="text" [(ngModel)]="newProduct.image" #image="ngModel"
+                    name="image" placeholder="Enter a product image URL (Optional)" />
+
+                <span class="approved-v-green">
+                    <img title="Image is not a required field, but it is recommended to upload an image to get more exposure for your product"
+                        src="https://cdn4.iconfinder.com/data/icons/controls-add-on-flat/48/Contols_-_Add_On-26-512.png"
+                        alt="Approved" width="25" />
+                </span>
+            </div>
+        </div>
+
+        <div class="div-input-bottom">
+            <div class="div-flex">
+                <label for="city"><strong>City:</strong></label>
+
+                <input id="city" type="text" [(ngModel)]="newProduct.city" name="city"
+                    #city="ngModel" required minlength="3" maxlength="22"
+                    pattern="[a-zA-Z]{3}[a-zA-Z ]*" placeholder="Enter your city name" />
+
+                <span class="approved-v-green" *ngIf="city.valid">
+                    <img src="https://www.dr-eliyahudaniel.co.il/wp-content/uploads/2011/10/check-mark.png"
+                        alt="Approved" width="25" />
+                </span>
+            </div>
+
+            <div class="error" *ngIf="city.invalid && (city.dirty || city.touched)">
+                City name must start with at least 3 letters and contain only letters
+            </div>
+        </div>
+
+        <div class="div-input-bottom">
+            <div class="div-flex">
+                <label for="phoneNumber"><strong>Phone<br>Number:</strong></label>
+
+                <input id="phoneNumber" type="tel" [(ngModel)]="newProduct.phoneNumber"
+                    name="phoneNumber" #phoneNumber="ngModel" required maxlength="12"
+                    pattern="05[0-9]{1}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone number" />
+
+                <span class="approved-v-green" *ngIf="phoneNumber.valid">
+                    <img src="https://www.dr-eliyahudaniel.co.il/wp-content/uploads/2011/10/check-mark.png"
+                        alt="Approved" width="25" />
+                </span>
+            </div>
+
+            <div class="error"
+                *ngIf="phoneNumber.invalid && (phoneNumber.dirty || phoneNumber.touched)">
+                You must use this format: 05x-xxx-xxxx
+            </div>
+        </div>
+
+        <div class="submit">
+            <button [disabled]="newForm.form.invalid" (click)="addHandler()">Add Product</button>
+        </div>
+    </fieldset>
+</form>

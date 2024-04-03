@@ -1,0 +1,48 @@
+<div class="div-sort div-flex-sell">
+    <fieldset>
+        <legend><strong>Sort By Price</strong></legend>
+
+        <button id="btn-sort-price-lth" (click)="sortByPriceUp()">Low To High</button>
+
+        <button id="btn-sort-price-htl" (click)="sortByPriceDown()">High To Low</button>
+    </fieldset>
+
+    <fieldset>
+        <legend><strong>Sort By Date</strong></legend>
+
+        <button id="btn-sort-date-otn" (click)="sortByDateUp()">Old To New</button>
+
+        <button id="btn-sort-date-nto" (click)="sortByDateDown()">New To Old</button>
+    </fieldset>
+</div>
+
+
+<div *ngFor="let product of products">
+    <div class="div-prod">
+        <h1>{{product.name}}</h1>
+
+        <figure>
+            <img [src]="product.image" width="500" [alt]="product.name" />
+            <figcaption>
+                <em>{{product.datePublished | date:'dd/MM/yyyy - HH:mm'}}</em>
+            </figcaption>
+        </figure>
+
+        <div class="div-flex-sell">
+            <div>
+                <button id="btn-detailse" [routerLink]="'/details/' + product.id">Details</button>
+            </div>
+
+            <div>
+                <div class="div-flex-price">
+                    <span><em>{{product.price | currency:'USD'}}</em></span>
+                </div>
+            </div>
+
+            <div>
+                <button id="btn-purchase" (click)="deleteHandler(product.id)">Purchase</button>
+            </div>
+        </div>
+    </div>
+    <hr size="5px" width="800px">
+</div>
