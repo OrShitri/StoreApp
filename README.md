@@ -1,5 +1,25 @@
 # StoreApp
+Web application in Angular of a second-hand style digital store. 
+<br>
+The application allows users to post products for sale, and to purchase products from the store.
+<br>
+You can sort products by price or by publication date in ascending or descending order.
+<br>
+The navigation in the application between the pages is done by using Routes.
+<br>
+Validating form is used, and a pattern validator with the use of Regex.
+<br>
+The application works against the server side of json-server, by using HttpClient in Get, Post, Delete, etc. requests.
 
+## Installing
+* Pull from here
+* Run npm i 
+
+## Executing Program
+* Run npm run server
+* Run ng serve
+
+## Version
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
 
 ## Development server
